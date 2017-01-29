@@ -10,6 +10,15 @@ angular.module('PHSymposium2017.feedback', ['ngRoute'])
 }])
 
 .controller('FeedbackCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
+
+  $scope.$watch('form.q2', function(value) {
+       if(value == 'Other'){
+         $scope.q2Textbox = true;
+       } else {
+         $scope.q2Textbox = false;
+       }
+ });
+
   $scope.submit = function() {
     var form = $scope.form;
     var jsonForm = angular.toJson(form, true);
