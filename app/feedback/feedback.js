@@ -11,13 +11,27 @@ angular.module('PHSymposium2017.feedback', ['ngRoute'])
 
 .controller('FeedbackCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
 
+  $scope.form = {};
+
+  $scope.q2Textbox = false;
   $scope.$watch('form.q2', function(value) {
-       if(value == 'Other'){
-         $scope.q2Textbox = true;
-       } else {
+       if(value == 'EDMs' || value == 'Invitation_From_SMU' || value == 'Word_of_Mouth'){
          $scope.q2Textbox = false;
+         $scope.showQ2Textbox = null;
+       } else {
+         $scope.q2Textbox = true;
        }
  });
+
+ $scope.$watch('showQ2Textbox', function(value) {
+   console.log("q2TB: ", value);
+      if(value == 'true'){
+        $scope.form.q2 = null;
+        $scope.q2Textbox = true;
+      } else {
+        $scope.q2Textbox = false;
+      }
+});
 
   $scope.submit = function() {
     var form = $scope.form;

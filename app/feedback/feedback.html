@@ -29,10 +29,10 @@
     <input type="radio" ng-model="form.q2" value="Word_of_Mouth" id="q2.Word_of_Mouth">
       <label for="q2.Word_of_Mouth">Word of Mouth</label>
     </input></br>
-    <input type="radio" ng-model="form.q2" value="Other" id="q2.Other">
+    <input type="radio" ng-model="showQ2Textbox" value="true" id="q2.Other">
       <label for="q2.Other">Other</label>
-    </input>
-    <input type="text" ng-show="q2Textbox" ng-model="form.q2.other">
+    </input></br>
+    <input type="text" ng-show="q2Textbox" ng-model="form.q2">
   </p></br>
 
   <!--q3-->
@@ -137,13 +137,13 @@
   <!--q9-->
   <p>
     What new information did you find valuable during the panel discussion that you might use in your school or clinical setting?</br>
-    <textarea name="form.q9" rows="3"></textarea>
+    <textarea ng-model="form.q9" rows="3"></textarea>
   </p></br>
 
   <!--q10-->
   <p>
     Which segment(s) of the symposium do you find most helpful and relevant?</br>
-    <textarea name="form.q10" rows="3"></textarea>
+    <textarea ng-model="form.q10" rows="3"></textarea>
   </p></br>
 
   <!--q11-->
@@ -166,7 +166,7 @@
   <!--q12-->
   <p>
     Any final comments?</br>
-    <textarea name="form.q12" rows="3"></textarea>
+    <textarea ng-model="form.q12" rows="3"></textarea>
   </p></br>
 
   <p>
