@@ -1,0 +1,9 @@
+p {
+  margin: auto;
+  text-align: center;
+  /*border: 1px solid green;*/
+}
+
+textarea {
+  width: 100%; /*fits text box to device width*/
+}

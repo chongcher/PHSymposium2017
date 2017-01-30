@@ -1,22 +1,21 @@
 <!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="feedback/feedback.css">
+</head>
 <form ng-submit="submit()" method="post" name="FeedbackForm">
-
+  <!--q1-->
   <p>
     Your full name:</br>
     <input type="text" ng-model="form.fullname">
   </p>
-
   <p>
     Organization:</br>
     <input type="text" ng-model="form.organization">
   </p>
-
   <p>
     Designation:</br>
     <input type="text" ng-model="form.designation">
-  </p>
-
-  </br>
+  </p></br>
 
   <!--q2-->
   <p>
@@ -34,7 +33,7 @@
       <label for="q2.Other">Other</label>
     </input>
     <input type="text" ng-show="q2Textbox" ng-model="form.q2.other">
-  </p>
+  </p></br>
 
   <!--q3-->
   <p>
@@ -51,7 +50,7 @@
     <input type="radio" ng-model="form.q3" value="Strongly_Disagree" id="q3.Strongly_Disagree">
       <label for="q3.Strongly_Disagree">Strongly Disagree</label>
     </input>
-  </p>
+  </p></br>
 
   <!--q4-->
   <p>
@@ -68,7 +67,7 @@
     <input type="radio" ng-model="form.q4" value="Strongly_Disagree" id="q4.Strongly_Disagree">
       <label for="q4.Strongly_Disagree">Strongly Disagree</label>
     </input>
-  </p>
+  </p></br>
 
   <!--q5-->
   <p>
@@ -82,7 +81,7 @@
     <input type="radio" ng-model="form.q5" value="Too_Long" id="q5.Too_Long">
       <label for="q5.Too_Long">Too Long</label>
     </input>
-  </p>
+  </p></br>
 
   <!--q6-->
   <p>
@@ -99,7 +98,7 @@
     <input type="radio" ng-model="form.q6" value="Strongly_Disagree" id="q6.Strongly_Disagree">
       <label for="q6.Strongly_Disagree">Strongly Disagree</label>
     </input>
-  </p>
+  </p></br>
 
   <!--q7-->
   <p>
@@ -116,7 +115,7 @@
     <input type="radio" ng-model="form.q7" value="Strongly_Disagree" id="q7.Strongly_Disagree">
       <label for="q7.Strongly_Disagree">Strongly Disagree</label>
     </input>
-  </p>
+  </p></br>
 
   <!--q8-->
   <p>
@@ -133,19 +132,19 @@
     <input type="radio" ng-model="form.q8" value="Strongly_Disagree" id="q8.Strongly_Disagree">
       <label for="q8.Strongly_Disagree">Strongly Disagree</label>
     </input>
-  </p>
+  </p></br>
 
   <!--q9-->
   <p>
     What new information did you find valuable during the panel discussion that you might use in your school or clinical setting?</br>
-    <textarea name="form.q9" rows="10" cols="30"></textarea> <!--TODO make textarea fit to device width-->
-  </p>
+    <textarea name="form.q9" rows="3"></textarea>
+  </p></br>
 
   <!--q10-->
   <p>
     Which segment(s) of the symposium do you find most helpful and relevant?</br>
-    <textarea name="form.q10" rows="10" cols="30"></textarea> <!--TODO make textarea fit to device width-->
-  </p>
+    <textarea name="form.q10" rows="3"></textarea>
+  </p></br>
 
   <!--q11-->
   <p>
@@ -162,13 +161,13 @@
     <input type="radio" ng-model="form.q11" value="Poor" id="q11.Poor">
       <label for="q11.Poor">Poor</label>
     </input>
-  </p>
+  </p></br>
 
   <!--q12-->
   <p>
     Any final comments?</br>
-    <textarea name="form.q12" rows="10" cols="30"></textarea> <!--TODO make textarea fit to device width-->
-  </p>
+    <textarea name="form.q12" rows="3"></textarea>
+  </p></br>
 
   <p>
     <button type="submit">Submit</button>
