@@ -11,7 +11,7 @@ angular.module('PHSymposium2017.certificate', ['ngRoute'])
 
 .controller('CertificateCtrl', ['$scope', '$http', '$log', '$sce', function($scope, $http, $log, $sce) {
   var fullname = sessionStorage.fullname.replace(/ /g,"%20").replace(/["']/g, "");
-  var cert = "https://res.cloudinary.com/chongcher/image/upload/w_800/l_text:arial_60:" + fullname + ",g_north,y_250,co_white/v1482053821/sample.jpg";
+  var cert = "https://res.cloudinary.com/chongcher/image/upload/w_1600/l_text:arial_60_center:" + fullname + ",g_north,y_480,x_-100,co_black/v1485750208/symposium_coa.png";
   $log.log(cert);
   $scope.certificateLink = $sce.trustAsResourceUrl(cert);
 }]);
