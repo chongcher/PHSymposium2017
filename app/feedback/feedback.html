@@ -2,175 +2,179 @@
 <head>
 <link rel="stylesheet" href="feedback/feedback.css">
 </head>
-<form ng-submit="submit()" method="post" name="FeedbackForm">
-  <!--q1-->
-  <p>
-    Your full name:</br>
-    <input type="text" ng-model="form.fullname">
-  </p>
-  <p>
-    Organization:</br>
-    <input type="text" ng-model="form.organization">
-  </p>
-  <p>
-    Designation:</br>
-    <input type="text" ng-model="form.designation">
-  </p></br>
+<body>
+  <form ng-submit="submit()" method="post" name="FeedbackForm">
+    <!--q1-->
+    <p>
+      Your full name:</br>
+      <input type="text" ng-model="form.fullname">
+    </p>
+    <p>
+      Organization:</br>
+      <input type="text" ng-model="form.organization">
+    </p>
+    <p>
+      Designation:</br>
+      <input type="text" ng-model="form.designation">
+    </p></br>
 
-  <!--q2-->
-  <p>
-    How did you get to know about this event?</br>
-    <input type="radio" ng-model="form.q2" value="EDMs" id="q2.EDMs">
-      <label for="q2.EDMs">EDMs</label>
-    </input></br>
-    <input type="radio" ng-model="form.q2" value="Invitation_From_SMU" id="q2.Invitation_From_SMU">
-      <label for="q2.Invitation_From_SMU">Invitation From SMU</label>
-    </input></br>
-    <input type="radio" ng-model="form.q2" value="Word_of_Mouth" id="q2.Word_of_Mouth">
-      <label for="q2.Word_of_Mouth">Word of Mouth</label>
-    </input></br>
-    <input type="radio" ng-model="showQ2Textbox" value="true" id="q2.Other">
-      <label for="q2.Other">Other</label>
-    </input></br>
-    <input type="text" ng-show="q2Textbox" ng-model="form.q2">
-  </p></br>
+    <!--q2-->
+    <p>
+      How did you get to know about this event?</br>
+      <input type="radio" ng-model="form.q2" value="EDMs" id="q2.EDMs">
+        <label for="q2.EDMs">EDMs</label>
+      </input></br>
+      <input type="radio" ng-model="form.q2" value="Invitation_From_SMU" id="q2.Invitation_From_SMU">
+        <label for="q2.Invitation_From_SMU">Invitation From SMU</label>
+      </input></br>
+      <input type="radio" ng-model="form.q2" value="Word_of_Mouth" id="q2.Word_of_Mouth">
+        <label for="q2.Word_of_Mouth">Word of Mouth</label>
+      </input></br>
+      <input type="radio" ng-model="showQ2Textbox" value="true" id="q2.Other">
+        <label for="q2.Other">Other</label>
+      </input></br>
+      <input type="text" ng-show="q2Textbox" ng-model="form.q2">
+    </p></br>
 
-  <!--q3-->
-  <p>
-    The symposium has achieved its objectives</br>
-    <input type="radio" ng-model="form.q3" value="Strongly_Agree" id="q3.Strongly_Agree">
-      <label for="q3.Strongly_Agree">Strongly Agree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q3" value="Agree" id="q3.Agree">
-      <label for="q3.Agree">Agree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q3" value="Disagree" id="q3.Disagree">
-      <label for="q3.Disagree">Disagree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q3" value="Strongly_Disagree" id="q3.Strongly_Disagree">
-      <label for="q3.Strongly_Disagree">Strongly Disagree</label>
-    </input>
-  </p></br>
+    <!--q3-->
+    <p>
+      The symposium has achieved its objectives</br>
+      <input type="radio" ng-model="form.q3" value="Strongly_Agree" id="q3.Strongly_Agree">
+        <label for="q3.Strongly_Agree">Strongly Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q3" value="Agree" id="q3.Agree">
+        <label for="q3.Agree">Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q3" value="Disagree" id="q3.Disagree">
+        <label for="q3.Disagree">Disagree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q3" value="Strongly_Disagree" id="q3.Strongly_Disagree">
+        <label for="q3.Strongly_Disagree">Strongly Disagree</label>
+      </input>
+    </p></br>
 
-  <!--q4-->
-  <p>
-    The symposium content is helpful and relevant to me or my organization</br>
-    <input type="radio" ng-model="form.q4" value="Strongly_Agree" id="q4.Strongly_Agree">
-      <label for="q4.Strongly_Agree">Strongly Agree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q4" value="Agree" id="q4.Agree">
-      <label for="q4.Agree">Agree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q4" value="Disagree" id="q4.Disagree">
-      <label for="q4.Disagree">Disagree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q4" value="Strongly_Disagree" id="q4.Strongly_Disagree">
-      <label for="q4.Strongly_Disagree">Strongly Disagree</label>
-    </input>
-  </p></br>
+    <!--q4-->
+    <p>
+      The symposium content is helpful and relevant to me or my organization</br>
+      <input type="radio" ng-model="form.q4" value="Strongly_Agree" id="q4.Strongly_Agree">
+        <label for="q4.Strongly_Agree">Strongly Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q4" value="Agree" id="q4.Agree">
+        <label for="q4.Agree">Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q4" value="Disagree" id="q4.Disagree">
+        <label for="q4.Disagree">Disagree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q4" value="Strongly_Disagree" id="q4.Strongly_Disagree">
+        <label for="q4.Strongly_Disagree">Strongly Disagree</label>
+      </input>
+    </p></br>
 
-  <!--q5-->
-  <p>
-    The duration of the symposium is</br>
-    <input type="radio" ng-model="form.q5" value="Too_Short" id="q5.Too_Short">
-      <label for="q5.Too_Short">Too Short</label>
-    </input></br>
-    <input type="radio" ng-model="form.q5" value="Appropriate" id="q5.Appropriate">
-      <label for="q5.Appropriate">Appropriate</label>
-    </input></br>
-    <input type="radio" ng-model="form.q5" value="Too_Long" id="q5.Too_Long">
-      <label for="q5.Too_Long">Too Long</label>
-    </input>
-  </p></br>
+    <!--q5-->
+    <p>
+      The duration of the symposium is</br>
+      <input type="radio" ng-model="form.q5" value="Too_Short" id="q5.Too_Short">
+        <label for="q5.Too_Short">Too Short</label>
+      </input></br>
+      <input type="radio" ng-model="form.q5" value="Appropriate" id="q5.Appropriate">
+        <label for="q5.Appropriate">Appropriate</label>
+      </input></br>
+      <input type="radio" ng-model="form.q5" value="Too_Long" id="q5.Too_Long">
+        <label for="q5.Too_Long">Too Long</label>
+      </input>
+    </p></br>
 
-  <!--q6-->
-  <p>
-    Dr Mi Seo has effectively communicated her ideas and concepts</br>
-    <input type="radio" ng-model="form.q6" value="Strongly_Agree" id="q6.Strongly_Agree">
-      <label for="q6.Strongly_Agree">Strongly Agree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q6" value="Agree" id="q6.Agree">
-      <label for="q6.Agree">Agree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q6" value="Disagree" id="q6.Disagree">
-      <label for="q6.Disagree">Disagree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q6" value="Strongly_Disagree" id="q6.Strongly_Disagree">
-      <label for="q6.Strongly_Disagree">Strongly Disagree</label>
-    </input>
-  </p></br>
+    <!--q6-->
+    <p>
+      Dr Mi Seo has effectively communicated her ideas and concepts</br>
+      <input type="radio" ng-model="form.q6" value="Strongly_Agree" id="q6.Strongly_Agree">
+        <label for="q6.Strongly_Agree">Strongly Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q6" value="Agree" id="q6.Agree">
+        <label for="q6.Agree">Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q6" value="Disagree" id="q6.Disagree">
+        <label for="q6.Disagree">Disagree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q6" value="Strongly_Disagree" id="q6.Strongly_Disagree">
+        <label for="q6.Strongly_Disagree">Strongly Disagree</label>
+      </input>
+    </p></br>
 
-  <!--q7-->
-  <p>
-    Dr Harold Robers has effectively communicated his ideas and concepts</br>
-    <input type="radio" ng-model="form.q7" value="Strongly_Agree" id="q7.Strongly_Agree">
-      <label for="q7.Strongly_Agree">Strongly Agree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q7" value="Agree" id="q7.Agree">
-      <label for="q7.Agree">Agree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q7" value="Disagree" id="q7.Disagree">
-      <label for="q7.Disagree">Disagree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q7" value="Strongly_Disagree" id="q7.Strongly_Disagree">
-      <label for="q7.Strongly_Disagree">Strongly Disagree</label>
-    </input>
-  </p></br>
+    <!--q7-->
+    <p>
+      Dr Harold Robers has effectively communicated his ideas and concepts</br>
+      <input type="radio" ng-model="form.q7" value="Strongly_Agree" id="q7.Strongly_Agree">
+        <label for="q7.Strongly_Agree">Strongly Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q7" value="Agree" id="q7.Agree">
+        <label for="q7.Agree">Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q7" value="Disagree" id="q7.Disagree">
+        <label for="q7.Disagree">Disagree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q7" value="Strongly_Disagree" id="q7.Strongly_Disagree">
+        <label for="q7.Strongly_Disagree">Strongly Disagree</label>
+      </input>
+    </p></br>
 
-  <!--q8-->
-  <p>
-    Ms Porsche Poh has effectively communicated her ideas and concepts</br>
-    <input type="radio" ng-model="form.q8" value="Strongly_Agree" id="q8.Strongly_Agree">
-      <label for="q8.Strongly_Agree">Strongly Agree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q8" value="Agree" id="q8.Agree">
-      <label for="q8.Agree">Agree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q8" value="Disagree" id="q8.Disagree">
-      <label for="q8.Disagree">Disagree</label>
-    </input></br>
-    <input type="radio" ng-model="form.q8" value="Strongly_Disagree" id="q8.Strongly_Disagree">
-      <label for="q8.Strongly_Disagree">Strongly Disagree</label>
-    </input>
-  </p></br>
+    <!--q8-->
+    <p>
+      Ms Porsche Poh has effectively communicated her ideas and concepts</br>
+      <input type="radio" ng-model="form.q8" value="Strongly_Agree" id="q8.Strongly_Agree">
+        <label for="q8.Strongly_Agree">Strongly Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q8" value="Agree" id="q8.Agree">
+        <label for="q8.Agree">Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q8" value="Disagree" id="q8.Disagree">
+        <label for="q8.Disagree">Disagree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q8" value="Strongly_Disagree" id="q8.Strongly_Disagree">
+        <label for="q8.Strongly_Disagree">Strongly Disagree</label>
+      </input>
+    </p></br>
 
-  <!--q9-->
-  <p>
-    What new information did you find valuable during the panel discussion that you might use in your school or clinical setting?</br>
-    <textarea ng-model="form.q9" rows="3"></textarea>
-  </p></br>
+    <!--q9-->
+    <p>
+      What new information did you find valuable during the panel discussion that you might use in your school or clinical setting?</br>
+      <textarea ng-model="form.q9" rows="3"></textarea>
+    </p></br>
 
-  <!--q10-->
-  <p>
-    Which segment(s) of the symposium do you find most helpful and relevant?</br>
-    <textarea ng-model="form.q10" rows="3"></textarea>
-  </p></br>
+    <!--q10-->
+    <p>
+      Which segment(s) of the symposium do you find most helpful and relevant?</br>
+      <textarea ng-model="form.q10" rows="3"></textarea>
+    </p></br>
 
-  <!--q11-->
-  <p>
-    Overall how would you rate the event?</br>
-    <input type="radio" ng-model="form.q11" value="Excellent" id="q11.Excellent">
-      <label for="q11.Excellent">Excellent</label>
-    </input></br>
-    <input type="radio" ng-model="form.q11" value="Good" id="q11.Good">
-      <label for="q11.Good">Good</label>
-    </input></br>
-    <input type="radio" ng-model="form.q11" value="Fair" id="q11.Fair">
-      <label for="q11.Fair">Fair</label>
-    </input></br>
-    <input type="radio" ng-model="form.q11" value="Poor" id="q11.Poor">
-      <label for="q11.Poor">Poor</label>
-    </input>
-  </p></br>
+    <!--q11-->
+    <p>
+      Overall how would you rate the event?</br>
+      <input type="radio" ng-model="form.q11" value="Excellent" id="q11.Excellent">
+        <label for="q11.Excellent">Excellent</label>
+      </input></br>
+      <input type="radio" ng-model="form.q11" value="Good" id="q11.Good">
+        <label for="q11.Good">Good</label>
+      </input></br>
+      <input type="radio" ng-model="form.q11" value="Fair" id="q11.Fair">
+        <label for="q11.Fair">Fair</label>
+      </input></br>
+      <input type="radio" ng-model="form.q11" value="Poor" id="q11.Poor">
+        <label for="q11.Poor">Poor</label>
+      </input>
+    </p></br>
 
-  <!--q12-->
-  <p>
-    Any final comments?</br>
-    <textarea ng-model="form.q12" rows="3"></textarea>
-  </p></br>
+    <!--q12-->
+    <p>
+      Any final comments?</br>
+      <textarea ng-model="form.q12" rows="3"></textarea>
+    </p></br>
 
-  <p>
-    <button type="submit">Submit</button>
-  </p>
+    <p>
+      <button type="submit">Submit</button>
+    </p>
 
-</form>
+  </form>
+
+  <img src="/img/footer.png" alt="footer.png" width= "100%"></img>
+</body>
