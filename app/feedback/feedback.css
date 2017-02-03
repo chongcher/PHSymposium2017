@@ -4,6 +4,12 @@ p {
   /*border: 1px solid green;*/
 }
 
+p.title {
+  font-weight: bold;
+  font-size: large;
+  text-decoration: underline;
+}
+
 textarea {
-  width: 100%; /*fits text box to device width*/
+  width: 85%; /*fits text box to device width*/
 }
