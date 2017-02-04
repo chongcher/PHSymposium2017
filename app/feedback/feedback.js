@@ -24,7 +24,7 @@ angular.module('PHSymposium2017.feedback', ['ngRoute'])
  });
 
  $scope.$watch('showQ2Textbox', function(value) {
-   console.log("q2TB: ", value);
+   //console.log("q2TB: ", value);
       if(value == 'true'){
         $scope.form.q2 = null;
         $scope.q2Textbox = true;
