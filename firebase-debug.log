@@ -1,0 +1,14 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.2.2
+[debug] Platform:     win32
+[debug] Node Version: v6.9.1
+[debug] Time:         Tue Feb 07 2017 14:46:52 GMT+0800 (Malay Peninsula Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: C:\Users\chongcher\Documents\SMU Peer Helpers Symposium 2017
+[info] Public Directory: app
+[info] 
+[info] Server listening at: http://localhost:5000
