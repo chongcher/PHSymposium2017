@@ -7,9 +7,9 @@
     SMU Peer Helpers Symposium 2017 Feedback Form
   </p>
   <form ng-submit="submit()" method="post" name="FeedbackForm">
-    <!--q1-->
+    <!--q0-->
     <p>
-      Your full name:</br>
+      Full Name (to be displayed on the certificate):</br>
       <input type="text" ng-model="form.fullname" ng-required='!form.fullname'>
     </p>
     <p>
@@ -21,27 +21,47 @@
       <input type="text" ng-model="form.designation" ng-required='!form.designation'>
     </p></br>
 
-    <!--q2-->
+    <!--q1-->
     <p>
       How did you get to know about this event?</br>
-      <input type="radio" ng-model="form.q2" value="EDMs" id="q2.EDMs" ng-required='!form.q2'>
-        <label for="q2.EDMs">EDMs</label>
+      <input type="radio" ng-model="form.q1" value="Emails_Received_From_SMU" id="q1.Emails_Received_From_SMU" ng-required='!form.q1'>
+        <label for="q1.Emails_Received_From_SMU">Emails received from SMU</label>
       </input></br>
-      <input type="radio" ng-model="form.q2" value="Invitation_From_SMU" id="q2.Invitation_From_SMU" ng-required='!form.q2'>
-        <label for="q2.Invitation_From_SMU">Invitation From SMU</label>
+      <input type="radio" ng-model="form.q1" value="Emails_Received_From_MOE" id="q1.Emails_Received_From_MOE" ng-required='!form.q1'>
+        <label for="q1.Emails_Received_From_MOE">Emails received from MOE</label>
       </input></br>
-      <input type="radio" ng-model="form.q2" value="Word_of_Mouth" id="q2.Word_of_Mouth" ng-required='!form.q2'>
-        <label for="q2.Word_of_Mouth">Word of Mouth</label>
+      <input type="radio" ng-model="form.q1" value="Emails_Received_From_Other_Institutions" id="q1.Emails_Received_From_Other_Institutions" ng-required='!form.q1'>
+        <label for="q1.Emails_Received_From_Other_Institutions">Emails received from Other Institutions</label>
       </input></br>
-      <input type="radio" ng-model="showQ2Textbox" value="true" id="q2.Other" ng-required='!form.q2'>
-        <label for="q2.Other">Other</label>
+      <input type="radio" ng-model="form.q1" value="Word_of_Mouth" id="q1.Word_of_Mouth" ng-required='!form.q1'>
+        <label for="q1.Word_of_Mouth">Word of Mouth</label>
       </input></br>
-      <input type="text" ng-show="q2Textbox" ng-model="form.q2" ng-required='!form.q2'>
+      <input type="radio" ng-model="showQ1Textbox" value="true" id="q1.Other" ng-required='!form.q1'>
+        <label for="q1.Other">Other</label>
+      </input></br>
+      <input type="text" ng-show="q1Textbox" ng-model="form.q1" ng-required='!form.q1'>
+    </p></br>
+
+    <!--q2-->
+    <p>
+      The symposium communicated the importance of having peer helping programmes in educational institutions</br>
+      <input type="radio" ng-model="form.q2" value="Strongly_Agree" id="q2.Strongly_Agree" ng-required='!form.q2'>
+        <label for="q2.Strongly_Agree">Strongly Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q2" value="Agree" id="q2.Agree" ng-required='!form.q2'>
+        <label for="q2.Agree">Agree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q2" value="Disagree" id="q2.Disagree" ng-required='!form.q2'>
+        <label for="q2.Disagree">Disagree</label>
+      </input></br>
+      <input type="radio" ng-model="form.q2" value="Strongly_Disagree" id="q2.Strongly_Disagree" ng-required='!form.q2'>
+        <label for="q2.Strongly_Disagree">Strongly Disagree</label>
+      </input>
     </p></br>
 
     <!--q3-->
     <p>
-      The symposium has achieved its objectives</br>
+      The symposium provided me with relevant knowledge to set up/be part of a peer helping programme in my institution</br>
       <input type="radio" ng-model="form.q3" value="Strongly_Agree" id="q3.Strongly_Agree" ng-required='!form.q3'>
         <label for="q3.Strongly_Agree">Strongly Agree</label>
       </input></br>
@@ -58,7 +78,7 @@
 
     <!--q4-->
     <p>
-      The symposium content is helpful and relevant to me or my organization</br>
+      The symposium enabled me to connect with other institutions</br>
       <input type="radio" ng-model="form.q4" value="Strongly_Agree" id="q4.Strongly_Agree" ng-required='!form.q4'>
         <label for="q4.Strongly_Agree">Strongly Agree</label>
       </input></br>
@@ -140,7 +160,7 @@
 
     <!--q9-->
     <p>
-      What new information did you find valuable during the panel discussion that you might use in your school or clinical setting?</br>
+      What information did you find valuable during the panel discussion that you might use in your school or clinical setting?</br>
       <textarea ng-model="form.q9" rows="3" ng-required='!form.q9'></textarea>
     </p></br>
 

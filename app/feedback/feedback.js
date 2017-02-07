@@ -13,23 +13,23 @@ angular.module('PHSymposium2017.feedback', ['ngRoute'])
 
   $scope.form = {};
 
-  $scope.q2Textbox = false;
-  $scope.$watch('form.q2', function(value) {
-       if(value == 'EDMs' || value == 'Invitation_From_SMU' || value == 'Word_of_Mouth'){
-         $scope.q2Textbox = false;
-         $scope.showQ2Textbox = null;
+  $scope.q1Textbox = false;
+  $scope.$watch('form.q1', function(value) {
+       if(value == 'Emails_Received_From_SMU' || value == 'Emails_Received_From_MOE' || value == 'Emails_Received_From_Other_Institutions' || value == 'Word_of_Mouth'){
+         $scope.q1Textbox = false;
+         $scope.showQ1Textbox = null;
        } else {
-         $scope.q2Textbox = true;
+         $scope.q1Textbox = true;
        }
  });
 
- $scope.$watch('showQ2Textbox', function(value) {
+ $scope.$watch('showQ1Textbox', function(value) {
    //console.log("q2TB: ", value);
       if(value == 'true'){
-        $scope.form.q2 = null;
-        $scope.q2Textbox = true;
+        $scope.form.q1 = null;
+        $scope.q1Textbox = true;
       } else {
-        $scope.q2Textbox = false;
+        $scope.q1Textbox = false;
       }
 });
 
